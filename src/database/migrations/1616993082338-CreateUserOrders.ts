@@ -18,13 +18,6 @@ export class CreateUserOrders1616993082338 implements MigrationInterface {
           { name: 'game_id', type: 'uuid' },
 
           { name: 'amount', type: 'number' },
-          {
-            name: 'price',
-            type: 'decimal',
-            precision: 10,
-            scale: 2,
-            isNullable: false,
-          },
           { name: 'purchased', type: 'boolean', default: false },
 
           { name: 'created_at', type: 'timestamp', default: 'now()' },
