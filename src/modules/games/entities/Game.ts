@@ -20,12 +20,6 @@ export class Game {
   @ManyToMany(() => User, (user) => user.games)
   users: User[];
 
-  @Column('decimal')
-  price: number;
-
-  @Column('uuid')
-  genre_id: string;
-
   @CreateDateColumn()
   created_at: Date;
 
